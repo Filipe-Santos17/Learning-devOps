@@ -1,0 +1,9 @@
+Dicas de Produtividade com VsCode:
+
+1º Instalar o NodeJs:
+--No Windows, baixe no site oficial
+--No Linux, instale o nvm
+
+2º Instalar o VsCode:
+--Site oficial
+

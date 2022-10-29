@@ -1,0 +1,15 @@
+Conhecimento Minimo de Backend
+--Organizar codigo(MVC e camadas)
+--protocolo RestApi e Graphl
+--Conexão util com backend(Crud e Autenticação)
+--Busque além do mínimo
+
+RoadMap de Junior para Pleno:
+--Senioridade é mais relacionada ao tempo e experiências, não somente por conhecimento
+--Pratique
+--Argumente por que estou usando essa tecnologia e como ela me ajuda?
+--Coloque no ar e teste
+--Entenda os fundamentos da tecnologia que está utilizando
+
+
+

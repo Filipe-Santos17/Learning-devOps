@@ -1,0 +1,47 @@
+Nota:
+--O Shell do MongoDb tem  uma linguagem similar ao JS
+
+Banco de dados:
+--> use namebanco //Cria e também serve para selecionar o banco
+-O Banco não é criado até existir/inserir dados nele
+-Collection é uma estrutura json que seria similar a tabela do SQL
+-ObjectId = hash aleatorio de letra e numero que representa o _id, insere automaticamente em cada Collection
+--> db.collection.drop //apaga a collection
+--> db.dropDatabases() //apaga a db selecionada
+
+Comandos:
+db.nomeCollection
+-> .insertOne({nome:dado}) - Inserir um dado no banco// {} = document, segui o estilo do Json
+-> .insertMany([]) - Inserir varios dados//[{},{}] - array de dados
+-> .find() - exibe todos os dados dentro da collection //também serve para condições {dado:status} e retorna todos que esse valor é verdadeiro
+-> .findOne() - retorna apenas o primeiro dado //ordem de cadastro
+-> .pretty() - com o .find(), exibe os dados de forma mais limpa
+-> .updateMany[{},{$set {}}) - atualiza todos os dados que a 1º condição for verdadeira // e pode adicionar uma nova coluna
+//um único collection pode ter dados diferentes que outros, mongodb/nosql permite isso, sql não
+-> .updateOne({},{ $set:{} }) - atualiza apenas um, o 1º {} é a forma de achar e o 2º é o valor novo que deve ficar dentro de $set:{}
+-> .deleteOne({})
+-> .deleteMany({})
+
+Operadores:
+--todo operador começa com $
+-> $gt: Maior que , ex: db.col.find({idade: { $gt: 30 } })
+-> $gte: Maior ou igual que
+-> $lt: Menor que e $lte: Menor ou igual
+
+ex:
+db.col.updateMany({ idade: {$gt: 35}}, {$set:{prioridade: true}}) - todos que tem idade maior que 35 recebe prioridade como true
+
+outro exemplo:
+db.pessoas.insertone({
+  nome:"Paula",
+  idade:44,
+  hobbies:["Correr","Ler","Trilhas"],
+  esta trabalhando:true,
+  data_cadastro:new Date(),
+  caracteristicas:{
+    cor_dos_olhos:"azuis",
+    altura:1.82,
+    perfil:"extrovertida
+ }
+}) //pode ter document dentro de document e 
+    

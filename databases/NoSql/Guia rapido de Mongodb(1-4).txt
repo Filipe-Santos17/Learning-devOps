@@ -1,0 +1,32 @@
+AULA 1: BASES
+Banco de Dados = local para armazenamento de informações
+Dado = conjunto de informações
+SGBD = Sistemas Gerenciadores de Banco de Dados
+ex: MongoDB, MySQL e etc...
+
+AULA 2: INSTALAÇÃO
+Forma do video:
+--passo a passo do site de acordo com sistema
+Minha forma:
+--`sudo apt install mongodb`
+Instale o MongoDb Compass no site
+Toda colection tem um id, padrão mongo de letras e numeros, 
+
+AULA 3: BASÍCO DE MONGO COMPASS
+Crud = exibir, criar, alterar e deletar registros
+db.NomeCollection.find() = busca e exibe tudo
+db.NomeCollection.find().pretty() = busca e exibe tudo de forma organizada
+.find({"param":"valor"}) = busca com base no paramêtro
+.sort({"param":1}) = forma de ordenar os valores
+1 - significa ordem crescente(numero ou alfabetica)
+
+AULA 4:
+parametro pwd - inserir senha, ex: pwd:"senha"
+roles: [] - parametros de acesso/permissões
+ex: role:[{role:"readWrite", db:"nome do banco de acesso permitido"}]
+--tem varios roles, leia mais sobre
+db.auth("nome","senha") //se retorna 1 acertou, se for 0 errou
+
+rever mais sobre roles e aula 4
+
+

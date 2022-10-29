@@ -1,0 +1,110 @@
+Git = controle de versão = sistema com a finalidade de gerenciar diferentes versões de documentos/projetos.
+
+Git, trabalha com snapchots(fotos do estado) do codigo, todos os estado levam os arquivos inalterados com si
+
+Historia do Linux:
+--BitKeeper(empresa de ferramenta de versão da época), responsavel por manter o versionamento do Linux, decidiu cobrar serviços
+--Linux Torval criou o Git em resposta e melhorou em todos os pontos fracos do sistema anterior
+-- + Veloz, + Simples e + robusto a desenvolvimento não linear, totalmente distribuido e eficiente
+
+
+GitHub = serviço de web compartilhado para projetos que utilizam o Git/Rede Social para armazenar projetos que são versionados pelo Git
+
+Git != GitHub
+
+`sudo apt install git`
+
+# Definir usuario:
+git config --global user.name "name" //Nome do usuario
+git config --global user.email "email@" //Email do usuario
+git config --global core.editor  <editor> //editor padrão - se não definir usa o vim por padrão
+
+git config --list //mostra todas as informações
+
+
+# Iniciando repositorio:
+git init //Inicializa o repositorio
+
+# Ciclo de vida:
+1º Untracked = arquivo novo / desconhecido
+>>> git add . 
+<<< remove file
+2º unmodified = arquivo inalterado / conhecido 
+>>> edit
+3º modified = arquivo alterado / conhecido mas com mudanças
+>>> stage
+4º commited = arquivo salvo com novas modificações e se torna de novo unmodified
+
+
+comandos em ordem:
+git status //visualiza o status
+git add . //adiciona todas as mudanças
+git commit -m "message" //salva mudanças e comenta
+git status - verifique se ta tudo em ordem
+
+
+# Logs
+---> logs são o historico de modificações, contém hash/versão, autor e data 
+
+git log
+... --author //filtra autor
+... --author="name"
+... --decorate // + ou -
+... --shortlog //mostra em ordem alfabetica os autores(num de contribuições) e commits names
+... --shortlog -sn //quant de commits e pessoas
+... --graph //demonstra em forma grafica
+ 
+git show `hash` //mostra as mudanças adicionadas nessa versão
+
+# Diferença entre versões
+git diff // visualiza a mudança que foi feita, bom antes de fazer o add e o commit
+
+# Desfazendo com reset
+//Pulei aula
+
+# Criando repositorio remotos
+1º logue no GitHub
+2º New Repository
+3º Preencha informações
+4º Create Repository
+
+# Ligando repositorio local no Remoto
+1º git remote add origin git@github.com:conta/repository-name.git
+2º git remote -v  //verifica origin
+3º git push -u origin master
+
+# SSH
+-- Protocolo baseado em chaves(publica e privada - envia a publica e recebe a privada para permitir login), para indentificar conexão entre usuario e servidor
+--`sudo snap install gh`
+--`gh auth login` //loga no github pela internet e conecta ao git
+=== ou ===
+--> `cd ~/.ssh/`
+--> `cat id_rsa.pub`
+--> copia a chave SSH
+--> Loga no github
+--> Settings
+--> SSH and GPG Keys
+--> New SSH Key
+--> Cola chave e o titulo é livre(coloque o nome da maquina para indentificar)
+--> Add
+
+# Enviando mudanças para o Remoto
+--> git push //origin é default, e a branch master também
+
+# Clonando Repositorio
+--> git clone link-endereço //ssh também funciona e é mais rapido
+
+# Fork 
+--> Clone so pode ser feito em repositorios proprios, o fork já é quando quer atuar em outros projetos/repositorios
+--> Fork apenas pode ser feito pelo github
+
+
+
+
+
+
+
+
+
+
+https://ajudadoprogramador.com.br/artigo/trabalhando-com-o-git-log-com-decorate-graph-all-e-oneline

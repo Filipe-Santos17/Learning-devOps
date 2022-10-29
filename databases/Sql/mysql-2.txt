@@ -1,0 +1,23 @@
+Banco de dados 
+--> Objetivo = registrar instâncias separadas para objetos que tem as mesmas caracteristicas(ex: pessoas)
+--> O que é = coleção de dados, que são conjuntos de tabelas, que são conjuntos de registro/dados que tem semelhanças
+
+' create database nomeDb ' - cria o banco de dados
+
+Banco de dados > tabelas que contém > registros
+
+Tabelas: devem ter nome dos campos, tipos primitivos
+
+Tipo:
+-Numerico:
+--Inteiro
+--Real
+--Lógico
+
+-Data:
+
+-Literais:
+--Caractere
+--Texto
+--Binário
+--Coleção

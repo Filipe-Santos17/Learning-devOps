@@ -1,0 +1,28 @@
+
+
+AULA 7: DIFERENÇA ENTRE MYSQL E MONGODB
+*MySql:
+--Transações DICA
+--Estrutura em Tabelas
+--Row-Linha = registro 
+--column-coluna = indices de dados
+--Indices-Secondarios
+--JOINS = Tabelas associativas
+--Group_BY = Agrupar dados
+
+*MongoDB:
+--versão 4 virá com Transações DICA
+--Collections 
+--Documents
+--Field
+--Indices-Secondarios
+--Aggregation Pipeline
+
+- MongoDb tem um modelo de dados flexivel(cada estrutura pode ser única - cuidado)
+- Ambos possuem Schemas
+- Mongo é escalavel e possui drivers nativos
+- Workbench(mysql) e Compass(mongodb)
+- Serviços em nuvem
+
+Vantagens do mongo: modelo de dados flexivel e escalavel
+Vantagens do mysql: Transactions

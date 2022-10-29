@@ -1,0 +1,64 @@
+Dec. 50:
+--Surgimento dos computadores e dados guardados em papel
+--Arquivos > Tabelas > Registros
+--dec 60: desafio era armazenar os dados do papel para o digital
+--> Surge os arquivos sequenciais(tudo armazenado em ordem)
+--> Arquivo de acesso direto: possui indice e é encontrado diretamente
+
+CODASYL: 
+--Evento para reunir mentes e solucionar problemas
+--Surge o COBOL
+--Banco de Dados:
+--> Base de dados
+--> Sistema gerenciador(DNS/SGBD)
+--> Linguagem de exploração(única linguagem)
+--> Programas Adicionais(Extras)
+
+MODELOS :
+--Modelo Hierárquico
+--Model em Rede
+--->Falha no relacionamento de dados(os dois)
+
+--Modelo Relacional
+---> A partir de um dado pode se deduzir e ligar a outros
+
+SEQUEL = 
+SQL = Structered Query Language
+
+Ansi E Iso = padronizaram a lingua SQL
+
+4 bancos pagos:
+--Oracle
+--Sql Server
+--DB2
+--DBase
+
+4 bancos gratuitos:
+--MySql
+--Postgres
+--MariaDB
+--Firebird
+
+Historias do MySql:
+--Projeto surigu em 94
+--Registrado na GPL
+--Sum comprou Mysql em 2007
+--Oracle comprou a SUM
+
+DICA:
+-Durabilidade = todo dado deve ser duravel
+-Isolamento = uma transação não deve interferir em outra
+-Consistente = uma transação deve levar o banco de um estado conscistente(tudo ok) para outro estado conscistente(tudo ok)
+-Atômica = ou tudo roda ou nada funcionae e volta ao estado anterior
+
+Requisitos do Mysql no Windows
+--veja no site
+--Workbench também
+
+1º Letra - Nome da platarforma/SO (W = Wind, M = MaC , L = Linux, X = qualquer)
+A = Apache, servidor Php
+M = Mysql ou MariaDB
+P = php
+P = Perl, só tem no Xampp
+
+--3306 é a porta padrão do Mysql

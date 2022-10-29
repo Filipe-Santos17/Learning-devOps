@@ -1,0 +1,44 @@
+10 Razões para usar Netlify:
+competidores = Zeit, Github Pages, Vercel
+-0º = Muito rapido, deploy em segundos
+-1º = Deploy Atômico e RollBack, cada deploy é unico, a versão 1 e 2 continua existindo e rollback permite voltar a versão antiga em segundos
+-2º = Notificações e Permalinks, cada deploy gera uma notificação no slack, que gera um permalink(link único) que permite acessar um ambiente de testes
+-3º = Branch Deploys e Subdomínios, cada branch pode ter um deploy e ambiente de testes único
+-4º = Testes A/B, permite definir uma % de usuarios que acesse cada ambiente
+-5º = Build Contextuais
+-6º = SSL de um jeito simplificado
+-7º = Integração Contínua
+-8º = Otimização de Assets
+-9º = Prerendering e Postprocessing
+-10º = Redirects, rewrites e custom header control
+
+Fazendo Deploy:
+-> npm i -g netlify-cli
+-> netlify deploy, seguido de enter e enter
+-> netlify open
+
+Fazendo Deploy via Drag and Drop
+-> Acesse a pagína da Netlify
+-> Puxe a pasta do projeto e faça o deploy no final do site oficial
+
+Linkando Github com Netlify 
+-> Acesse a pagína da Netlify
+-> Conecte com o GitHub
+-> Escolha o projeto e a branch
+
+Mudando nome/url do site
+-> clique no 'site settings' e 'change sites name'
+
+Criando próprio domínio
+-> Domain Managment
+-> Custom domains
+-> Add custom domains(com e sem www)
+-> set o dominio primario sem o www
+dica: use o https://registro.br/
+-> 
+
+Habilitando SSL
+->Permite forçar o https
+
+Rollback
+->Deploy Previews

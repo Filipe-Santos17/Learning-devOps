@@ -1,0 +1,22 @@
+Aprendizado:
+-React:
+--Montando o layout basico do react
+--utilizando o react-router-v6
+
+
+-Django:
+--Conectar ao Sass/Css
+--Conectar ao Mysql/Postgres e migrations
+
+Manjaro - packman
+Aprender sobre o wetransfer
+
+fastApi com mongodb
+
+migrando mysql para mongodb
+http://knexjs.org/
+https://youtube.com/playlist?list=PLJ_KhUnlXUPumHjILbUWY_cskafhR_kXu
+node-postgres
+postbird
+require-directory
+consign npm
